@@ -1,0 +1,59 @@
+$light-bg: #ddd
+$med-bg: #888
+$dark-bg: #222
+$primary-color: #488
+$secondary-color: #4ff
+$light-text: #eee
+$med-text: #aaa
+$dark-text: #111
+
+@import sideNavbar
+@import home
+@import algorithms
+@import dataset
+@import search
+
+.Col
+    display: flex
+    flex-direction: column
+
+.Row
+    display: flex
+    height: 100%
+
+.App
+    display: flex
+    flex-direction: column
+    overflow: hidden
+    min-height: 720px
+    height: 100vh
+    width: 100vw
+    color: $dark-text
+    
+
+.mainBody
+    display: flex
+    background: $dark-bg
+    height: 95%
+    width: 100vw
+
+
+.projectWindow
+    display: flex
+    flex-direction: column
+    position: relative
+    box-shadow: -16px 0 16px rgba(0, 0, 0, 0.25)
+    height: 100%
+    flex: 1
+    overflow: auto
+
+.motionDiv
+    height: 100%
+    width: 100%
+
+.Footer
+    display: flex
+    flex: 1
+    background: $light-bg
+    box-shadow: 0 -8px 16px rgba(0, 0, 0, 0.25)
+    z-index: 10

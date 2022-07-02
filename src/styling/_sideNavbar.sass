@@ -1,0 +1,49 @@
+.sideNavContainer
+    display: flex
+    height: 100%
+
+.linkWrapper
+    display: flex
+    flex-direction: column
+    min-width: 128px
+    width: 128px
+    justify-content: space-around
+    align-items: center
+    overflow: auto
+    &::-webkit-scrollbar
+        width: 8px
+        &-track
+            border-radius: 4px
+            background: $dark-bg
+        &-thumb
+            border: 1px solid $dark-bg
+            border-radius: 4px
+            background: $med-bg
+
+.link
+    display: flex
+    font-size: 1.2rem
+    font-weight: 600
+    width: 93%
+    align-self: flex-end
+    height: 48px
+    box-sizing: border-box
+    padding: 8px
+    margin: 4px 0 4px 0
+    // border: 8px solid $dark-bg
+    border-right: none
+    align-items: center
+    text-decoration: none
+    color: $dark-text
+    background: $light-bg
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5)
+    transform-origin: right
+    transition: transform 0.05s 
+    transition: box-shadow 0.1s
+    &:hover
+        box-shadow: 0 0 32px rgba(255, 255, 255, 0.25)
+        transform: scale(1.02)
+    &:active
+        transform: scale(0.99)
+    &.active
+        background: $secondary-color

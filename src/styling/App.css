@@ -1,0 +1,930 @@
+.sideNavContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.linkWrapper, .dataLinkWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 128px;
+  width: 128px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: auto;
+}
+
+.linkWrapper::-webkit-scrollbar, .dataLinkWrapper::-webkit-scrollbar {
+  width: 8px;
+}
+
+.linkWrapper::-webkit-scrollbar-track, .dataLinkWrapper::-webkit-scrollbar-track {
+  border-radius: 4px;
+  background: #222;
+}
+
+.linkWrapper::-webkit-scrollbar-thumb, .dataLinkWrapper::-webkit-scrollbar-thumb {
+  border: 1px solid #222;
+  border-radius: 4px;
+  background: #888;
+}
+
+.link, .dataLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 93%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  height: 48px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 8px;
+  margin: 4px 0 4px 0;
+  border-right: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #111;
+  background: #ddd;
+  -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 0.05s;
+  transition: -webkit-transform 0.05s;
+  transition: transform 0.05s;
+  transition: transform 0.05s, -webkit-transform 0.05s;
+  -webkit-transition: -webkit-box-shadow 0.1s;
+  transition: -webkit-box-shadow 0.1s;
+  transition: box-shadow 0.1s;
+  transition: box-shadow 0.1s, -webkit-box-shadow 0.1s;
+}
+
+.link:hover, .dataLink:hover {
+  -webkit-box-shadow: 0 0 32px rgba(255, 255, 255, 0.25);
+          box-shadow: 0 0 32px rgba(255, 255, 255, 0.25);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.link:active, .dataLink:active {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+}
+
+.link.active, .active.dataLink {
+  background: #4ff;
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  min-height: 800px;
+  width: 100%;
+}
+
+.leftContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: inherit;
+  width: 38.2%;
+  background: #ddd;
+}
+
+.rightContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: inherit;
+  width: 61.8%;
+  background: #222;
+}
+
+.logoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 38.2%;
+}
+
+.splashContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 61.8%;
+  width: 61.8vw;
+  background: #488;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.navbarContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 19.1%;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.splashText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 61.8%;
+  width: 61.8%;
+  color: #eee;
+  font-size: 4.8vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 3;
+}
+
+.algContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  min-width: 1152px;
+  height: 100%;
+}
+
+.algWindow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: calc(100% - 80px);
+}
+
+.algNavbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #222;
+  min-height: 80px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 4px solid #488;
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.algLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  font-size: 1.2rem;
+  font-weight: 300;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  border-bottom: 4px solid rgba(0, 0, 0, 0);
+  color: #aaa;
+  -webkit-transition: all 0.2s 0s cubic-bezier(1, 0, 1, 1);
+  transition: all 0.2s 0s cubic-bezier(1, 0, 1, 1);
+}
+
+.algLink:hover {
+  border-bottom: 4px solid #488;
+  color: #eee;
+}
+
+.algLink.active {
+  -webkit-transition: all 0.5s 0s cubic-bezier(0, 1, 1, 1);
+  transition: all 0.5s 0s cubic-bezier(0, 1, 1, 1);
+  color: #eee;
+  border-bottom: 8px solid #4ff;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.algLeftColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 8px;
+  width: 480px;
+}
+
+.codeDisplay {
+  background: #888;
+  padding: 4px;
+  font-family: 'Source Code Pro';
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-bottom: 8px;
+  white-space: pre;
+  border: 2px solid #488;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  overflow: auto;
+  -webkit-box-shadow: inset -16px 0px 64px rgba(0, 0, 0, 0.5);
+          box-shadow: inset -16px 0px 64px rgba(0, 0, 0, 0.5);
+}
+
+.codeDisplay::-webkit-scrollbar {
+  height: 16px;
+}
+
+.codeDisplay::-webkit-scrollbar-track {
+  background: #222;
+}
+
+.codeDisplay::-webkit-scrollbar-thumb {
+  border: 1px solid #222;
+  border-radius: 8px;
+  background: #888;
+}
+
+.menuRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 192px;
+}
+
+.algMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.algMenuBtn {
+  font-family: 'Source Sans Pro';
+  font-size: 1.2rem;
+  border: none;
+  background: #ddd;
+  height: 32px;
+  width: 96px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+  opacity: 50%;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.algMenuBtn:hover {
+  -webkit-transform: translateX(8px);
+          transform: translateX(8px);
+  opacity: 100%;
+}
+
+.algMenuBtn:active {
+  -webkit-transform: translateX(4px);
+          transform: translateX(4px);
+  opacity: 100%;
+}
+
+.dataSelector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 32px;
+  background: #ddd;
+  text-overflow: ellipsis;
+  margin-bottom: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #488;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.dataOption {
+  border: none;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.5);
+  top: 38px;
+  left: -2px;
+  list-style: none;
+  width: 368px;
+  height: 192px;
+  overflow: auto;
+  font-family: 'Source Sans Pro';
+  font-size: 1.2rem;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+
+.dataOption.hidden {
+  display: none;
+}
+
+.selectorOption {
+  cursor: default;
+  padding: 0 4px;
+  margin: 8px;
+  height: 28px;
+  width: 320px;
+  color: #eee;
+  background: #222;
+  -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+}
+
+.selectorOption[aria-selected="true"] {
+  background: #488;
+}
+
+.selectorOption:hover {
+  -webkit-transform: translateX(8px);
+          transform: translateX(8px);
+}
+
+.selectorBtn {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  border: none;
+  padding: 0 4px;
+  height: 100%;
+  font-family: 'Source Sans Pro';
+  font-size: 1.2rem;
+  text-align: left;
+  width: 100%;
+}
+
+.selectedData {
+  height: 188px;
+  width: 252px;
+  border: 2px solid #488;
+  background: #888;
+  margin-left: 8px;
+  overflow: auto;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.algOutput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-height: 100%;
+  padding: 8px;
+}
+
+.animationWindow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  margin-top: 16px;
+  color: #eee;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.animationWindow::after {
+  content: '';
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#222));
+  background: linear-gradient(transparent, #222);
+  position: absolute;
+  bottom: 0;
+  height: 25%;
+  width: 100%;
+  z-index: 1;
+}
+
+.animationWindow::before {
+  content: '';
+  background: -webkit-gradient(linear, left top, left bottom, from(#222), to(transparent));
+  background: linear-gradient(#222, transparent);
+  position: absolute;
+  top: 0;
+  height: 25%;
+  width: 100%;
+  z-index: 1;
+}
+
+.objectList {
+  position: relative;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  top: 50%;
+  width: 50%;
+  font-size: 2rem;
+}
+
+.animationRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 1em;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.animationRow.active {
+  color: #4ff;
+  padding: 0 16px;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  max-height: 32px;
+}
+
+.animationRow.finished {
+  color: #111;
+}
+
+.animationRow.result {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  color: #0f0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.animatedKey {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 0.65em;
+  margin-left: 0.75em;
+  color: #aaa;
+}
+
+.animatedKey.embeded {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 0;
+  color: white;
+}
+
+.animatedKey.embeded::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-bottom: 1px solid #488;
+}
+
+.animatedKey.child {
+  color: inherit;
+}
+
+.animatedValue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 1.5rem;
+  height: 32px;
+}
+
+.outputSolution {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 94px;
+  padding: 0 16px;
+  margin-top: 16px;
+  color: #eee;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  border: solid 1px #888;
+  border-radius: 16px;
+}
+
+.outputSolution::after {
+  content: 'Result';
+  position: absolute;
+  color: #aaa;
+  top: 0;
+  padding: 0 16px;
+  background: #222;
+  -webkit-transform: translateY(-50%) scale(0.5);
+          transform: translateY(-50%) scale(0.5);
+}
+
+.animationLeft {
+  height: 32px;
+  width: 32px;
+  position: relative;
+  left: 5%;
+  background: #488;
+  border-radius: 50%;
+}
+
+.createDataContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.dataList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50%;
+}
+
+.dataLink {
+  font-size: 1rem;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  line-height: 1;
+  border: none;
+}
+
+.dataLinkWrapper {
+  min-width: 160px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.dataDisplay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background: #222;
+  overflow: auto;
+  -webkit-box-shadow: -8px 0 8px rgba(0, 0, 0, 0.25);
+          box-shadow: -8px 0 8px rgba(0, 0, 0, 0.25);
+}
+
+.dataDisplay::-webkit-scrollbar {
+  height: 16px;
+}
+
+.dataDisplay::-webkit-scrollbar-track {
+  background: #222;
+}
+
+.dataDisplay::-webkit-scrollbar-thumb {
+  border: 1px solid #222;
+  border-radius: 8px;
+  background: #888;
+}
+
+.objectWindow {
+  position: relative;
+  top: 0;
+  background: #888;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 4px 0 0 4px;
+  margin-left: 4px;
+}
+
+.objectWindow.hidden {
+  display: none;
+}
+
+.objectTitle {
+  width: 156px;
+  min-height: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: left;
+  font-weight: 400;
+  color: #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.objectValue {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 8px;
+  overflow: auto;
+}
+
+.objectValue::-webkit-scrollbar {
+  width: 8px;
+}
+
+.objectValue::-webkit-scrollbar-track {
+  background: #222;
+}
+
+.objectValue::-webkit-scrollbar-thumb {
+  border: 1px solid #222;
+  border-radius: 4px;
+  background: #888;
+}
+
+.arrayValue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-right: 4px;
+  text-align: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.indexSpan {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: 40px;
+  text-align: left;
+}
+
+.valueSpan {
+  width: 100%;
+}
+
+.dataPlaceholder {
+  margin: auto;
+  color: #aaa;
+  font-size: 3rem;
+  font-family: 'Architects Daughter';
+  font-weight: bold;
+}
+
+.newDataForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50%;
+  background: #ddd;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 8px inset #488;
+  padding: 8px;
+}
+
+.algSplash {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.searchBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 32px;
+}
+
+.searchLabel {
+  position: absolute;
+  left: 17px;
+  color: #aaa;
+  pointer-events: none;
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+  -webkit-transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.searchInput {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-family: 'Source Sans Pro';
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: solid 1px #888;
+  border-radius: 16px;
+  background: none;
+  height: 30px;
+  padding: 0 16px;
+  font-size: 16px;
+  color: #eee;
+  -webkit-transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.searchInput:focus, .searchInput:valid {
+  outline: none;
+  border: 1px solid #488;
+}
+
+.searchInput:focus ~ label, .searchInput:valid ~ label {
+  -webkit-transform: translateY(-50%) scale(0.75);
+          transform: translateY(-50%) scale(0.75);
+  background: #222;
+  padding: 0 8px;
+  color: #4ff;
+}
+
+.Col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  min-height: 720px;
+  height: 100vh;
+  width: 100vw;
+  color: #111;
+}
+
+.mainBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #222;
+  height: 95%;
+  width: 100vw;
+}
+
+.projectWindow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -webkit-box-shadow: -16px 0 16px rgba(0, 0, 0, 0.25);
+          box-shadow: -16px 0 16px rgba(0, 0, 0, 0.25);
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: auto;
+}
+
+.motionDiv {
+  height: 100%;
+  width: 100%;
+}
+
+.Footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: #ddd;
+  -webkit-box-shadow: 0 -8px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 -8px 16px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+}
+/*# sourceMappingURL=App.css.map */

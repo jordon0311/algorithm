@@ -1,0 +1,113 @@
+.createDataContainer
+    display: flex
+    flex-direction: column
+    height: 100%
+    width: 100%
+
+.dataList
+    display: flex
+    height: 50%
+
+.dataLink
+    @extend .link
+    font-size: 1rem
+    font-family: 'Source Sans Pro'
+    font-weight: 300
+    line-height: 1
+    border: none
+
+.dataLinkWrapper
+    @extend .linkWrapper
+    min-width: 160px
+    justify-content: flex-start
+
+.dataDisplay
+    display: flex
+    height: 100%
+    width: 100%
+    background: $dark-bg
+    overflow: auto
+    box-shadow: -8px 0 8px rgba(0, 0, 0, 0.25)
+    &::-webkit-scrollbar
+        height: 16px
+        &-track
+            background: $dark-bg
+        &-thumb
+            border: 1px solid $dark-bg
+            border-radius: 8px
+            background: $med-bg
+
+
+.objectWindow
+    position: relative
+    top: 0
+    background: $med-bg
+    display: flex
+    flex-direction: column
+    height: 100%
+    min-width: fit-content
+    box-sizing: border-box
+    padding: 4px 0 0 4px
+    margin-left: 4px
+    // border-right: 2px solid $secondary-color
+    &.hidden
+        display: none
+
+.objectTitle
+    width: 156px
+    min-height: 24px
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+    margin-right: 4px
+    box-sizing: border-box
+    text-align: left
+    font-weight: 400
+    color: $light-text
+    border-bottom: 1px solid $light-text
+
+.objectValue
+    width: 100%
+    box-sizing: border-box
+    padding-left: 8px
+    overflow: auto
+    &::-webkit-scrollbar
+        width: 8px
+        &-track
+            background: $dark-bg
+        &-thumb
+            border: 1px solid $dark-bg
+            border-radius: 4px
+            background: $med-bg
+
+.arrayValue
+    display: flex
+    width: 100%
+    box-sizing: border-box
+    padding-right: 4px
+    text-align: right
+    align-items: center
+    justify-content: space-between
+
+.indexSpan
+    align-self: flex-start
+    width: 40px
+    text-align: left
+
+.valueSpan
+    width: 100%
+
+.dataPlaceholder
+    margin: auto
+    color: $med-text
+    font-size: 3rem
+    font-family: 'Architects Daughter'
+    font-weight: bold
+
+.newDataForm
+    display: flex
+    height: 50%
+    background: $light-bg
+    box-sizing: border-box
+    border: 8px inset $primary-color
+    padding: 8px
